@@ -3,6 +3,7 @@
 <% @posts.each do |post| %>
   <div class="post">
     <h2><%= post.title %></h2>
+    <p class="author">Posted by <span class="author">Ana</span> on <%= post.created_at.strftime("%B %d, %Y") %></p>
     <p><%= post.body %></p>
   </div>
 <% end %>
